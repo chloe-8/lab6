@@ -1,0 +1,23 @@
+name: Load Test Pipeline
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  load-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install k6
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y k6
+
+      - name: Run Load Test
+        run: |
+          echo "Running load test..."
+          k6 run loadtest.js

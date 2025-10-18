@@ -1,0 +1,58 @@
+/* Form Container */
+form {
+    background-color: #f9f2d2; /* Soft beige background */
+    padding: 30px;
+    max-width: 600px;
+    margin: 20px auto;
+    border: 2px solid #b88a4f; /* Gold border */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+/* Labels */
+form label {
+    font-weight: bold;
+    color: #3b2a0b; /* Dark brown */
+    display: block;
+    margin-bottom: 2px;
+}
+
+/* Text Inputs, Number Inputs, and Textarea */
+form input[type="text"],
+form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #b88a4f;
+    border-radius: 5px;
+    margin-bottom: 7px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Buttons (Submit and Cancel) */
+form input[type="submit"],
+form button {
+    background-color: #b88a4f; /* Gold button */
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover Effect for Buttons */
+form input[type="submit"]:hover,
+form button:hover {
+    background-color: #9c7a3e; /* Darker gold on hover */
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+    form {
+        padding: 20px;
+    }
+}

@@ -1,0 +1,175 @@
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #d6c59b;
+    border-bottom: 2px solid #b88a4f;
+}
+
+form input[type="text"] {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #b88a4f;
+    border-radius: 4px;
+    flex-grow: 1;
+}
+
+form button {
+    background-color: #b88a4f;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #9c7a3e;
+}
+
+/* Product Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #d6c59b;
+}
+
+th {
+    background-color: #b88a4f;
+    color: white;
+}
+
+td {
+    background-color: #f9f2d2;
+}
+
+tr:hover {
+    background-color: #f1e6a6;
+}
+
+/* Product Image */
+img.product-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #b88a4f;
+}
+
+/* Edit/Delete Buttons */
+button.edit-btn,
+button.delete-btn {
+    background-color: #9c7a3e;
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button.edit-btn:hover {
+    background-color: #7d5e32;
+}
+
+button.delete-btn:hover {
+    background-color: #a0382b; /* Optional: red-tinted gold for delete */
+}
+
+/* Hidden Utility */
+.hidden {
+    display: none;
+}
+
+/* Delete Confirmation Modal */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+
+.modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.confirm-btn {
+    background-color: #0ccf29; 
+    color: white;
+    padding: 8px 12px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.confirm-btn:hover {
+    background-color: #157f04; 
+}
+
+.cancel-modal-btn {
+    background-color: rgb(255, 89, 0); 
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cancel-modal-btn:hover {
+    background-color: #8e0f0f; 
+}
+
+.hidden {
+    display: none;
+}
+
+img.product-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #b88a4f;
+}
+
+button.edit-btn,
+button.delete-btn {
+    background-color: #9c7a3e;
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    align-items: center;
+
+}
+
+button.edit-btn:hover {
+    background-color: #7d5e32;
+}
+
+button.delete-btn:hover {
+    background-color: #a0382b; /* Optional: red-tinted gold for delete */
+}

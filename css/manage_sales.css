@@ -1,0 +1,99 @@
+h2 {
+    color: #3b2a0b;
+    margin-bottom: 10px;
+}
+
+/* Controls */
+input[type="text"] {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #b88a4f;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    width: 250px;
+}
+
+button {
+    background-color: #b88a4f;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+button:hover {
+    background-color: #9c7a3e;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #d6c59b;
+}
+
+th {
+    background-color: #b88a4f;
+    color: white;
+}
+
+td {
+    background-color: #f9f2d2;
+}
+
+tr:hover {
+    background-color: #f1e6a6;
+}
+
+/* Product Image */
+.product-image {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 2px solid #b88a4f;
+}
+
+/* Action Links */
+td a {
+    color: #9c7a3e;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+td a:hover {
+    color: #7d5e32;
+    text-decoration: underline;
+}
+
+.product-image {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+#pagination {
+    margin-top: 15px;
+    text-align: center;
+}
+#pagination button {
+    background-color: #b88a4f;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    margin: 0 2px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#pagination .active-page {
+    background-color: #9c7a3e;
+    font-weight: bold;
+}

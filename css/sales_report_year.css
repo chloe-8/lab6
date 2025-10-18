@@ -1,0 +1,96 @@
+/* Container for the entire page */
+.container {
+    background-color: #f9f2d2; /* Soft beige background */
+    padding: 30px;
+    max-width: 900px;
+    margin: 20px auto;
+    border: 2px solid #b88a4f; /* Gold border */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+/* Heading styles */
+h2, h3 {
+    color: #3b2a0b; /* Dark brown */
+    font-weight: bold;
+}
+
+/* Report table styling */
+.report-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.report-table th, .report-table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #b88a4f;
+}
+
+.report-table th {
+    background-color: #f2e1b3; /* Light gold background for headers */
+}
+
+.report-table tr:nth-child(even) {
+    background-color: #f9f2d2; /* Alternating row color */
+}
+
+.report-table tr:hover {
+    background-color: #f2e1b3; /* Hover effect */
+}
+
+/* Button Styles */
+.buttons {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: #b88a4f; /* Gold button */
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #9c7a3e; /* Darker gold on hover */
+}
+
+/* Link for back button */
+.back-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.back-link a {
+    color: #b88a4f;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.back-link a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive styles */
+@media (max-width: 640px) {
+    .container {
+        padding: 20px;
+    }
+
+    .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .report-table {
+        font-size: 14px;
+    }
+}

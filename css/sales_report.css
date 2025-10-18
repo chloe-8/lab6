@@ -1,0 +1,40 @@
+h2, h3 {
+    text-align: center;
+    color: #4a3b1d;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 22px;
+    color: #6a501f;
+}
+
+/* Report Links */
+ul {
+    list-style: none;
+    padding: 0;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ul li a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #b88a4f;
+    color: white;
+    padding: 10px 20px;
+    width: 400px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    
+}
+
+ul li a:hover {
+    background-color: #9c7a3e;
+}
