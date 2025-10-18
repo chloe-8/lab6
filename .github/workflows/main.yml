@@ -1,0 +1,37 @@
+name: Load Test CI/CD
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  load-test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Install k6 (load testing tool)
+      run: |
+        sudo apt update
+        sudo apt install -y gnupg
+        curl -s https://dl.k6.io/key.gpg | sudo gpg --dearmor -o /usr/share/keyrings/k6-archive-keyring.gpg
+        echo "deb [signed-by=/usr/share/keyrings/k6-archive-keyring.gpg] https://dl.k6.io/deb stable main" | sudo tee /etc/apt/sources.list.d/k6.list
+        sudo apt update
+        sudo apt install -y k6
+
+    - name: Run Load Test
+      run: |
+        echo 'import http from "k6/http";
+        import { check } from "k6";
+        export default function () {
+          let res = http.get("http://localhost/InventoryManagement/php/login.php");
+          check(res, {
+            "response time < 200ms": (r) => r.timings.duration < 200,
+          });
+        }' > loadtest.js
+
+        k6 run loadtest.js
